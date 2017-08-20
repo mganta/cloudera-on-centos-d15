@@ -1,0 +1,63 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.1",
+  "parameters": {
+    "storageAccountSuffix": {
+      "value": "cdhadlsperfi"
+    },
+    "adminPassword": {
+      "value": "Bicycle_082017"
+    },
+    "cmPassword": {
+      "value": "Bicycle_082017"
+    },
+    "numberOfDataNodes": {
+      "value": 18
+    },
+    "dnsNamePrefix": {
+      "value": "cdhadlsperfi"
+    },
+    "masterStorageAccountType": {
+      "value": "Premium_LRS"
+    },
+    "workerStorageAccountType": {
+      "value": "Standard_LRS"
+    },
+    "virtualNetworkName": {
+      "value": "cdhadlsperfi"
+    },
+    "subnetName": {
+      "value": "cdhadlsperfi"
+    },
+    "tshirtSize": {
+      "value": "Eval"
+    },
+    "vmSize": {
+      "value": "Standard_DS15_V2"
+    },
+    "vmImage": {
+      "value": "ClouderaCentOS7_2"
+    },
+    "company": {
+      "value": "microsoft"
+    },
+    "emailAddress": {
+      "value": "microsoft@yourcompany.com"
+    },
+    "businessPhone": {
+      "value": "123456789"
+    },
+    "firstName": {
+      "value": "FirstName"
+    },
+    "lastName": {
+      "value": "LastName"
+    },
+    "jobRole": {
+      "value": "Administrator"
+    },
+    "jobFunction": {
+      "value": "Storage"
+    }
+  }
+}
