@@ -236,7 +236,7 @@
     "addressPrefix":"[parameters('addressPrefix')]",
     "subnetPrefix":"[parameters('subnetPrefix')]",
     "scriptsUriDescription": "For Command Line Deployment, scriptsUri must point to an Azure-accessible location like: https://raw.githubusercontent.com/mganta/cloudera-on-centos-d15/master",
-    "scriptsUri": "[uri(deployment().properties.templateLink.uri, '.')]",
+    "scriptsUri": "https://raw.githubusercontent.com/mganta/cloudera-on-centos-d15/master",
     "share-resourcesUri": "[concat(variables('scriptsUri'), '/shared-resources-', parameters('vnetNewOrExisting'), '-vnet.json')]",
     "data-nodeUri":"[concat(variables('scriptsUri'), '/data-node-', toLower(subString(parameters('vmSize'), 0, 13)), '.json')]",
     "sa": "[parameters('masterNodeIPAddress')]",
@@ -266,7 +266,7 @@
     "vmImageInfo": {
       "ClouderaCentOS7_2": {
         "plan": {
-          "name": "cloudera-centos-os",
+          "name": "7_2",
           "publisher": "cloudera",
           "product": "cloudera-centos-os"
         },
