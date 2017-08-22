@@ -68,8 +68,8 @@ set +e
 
 log "Set cloudera-manager.repo to CM v5"
 yum clean all >> "${LOG_FILE}" 2>&1
-rpm --import http://archive.cloudera.com/cdh5/redhat/6/x86_64/cdh/RPM-GPG-KEY-cloudera >> "${LOG_FILE}" 2>&1
-wget http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/cloudera-manager.repo -O /etc/yum.repos.d/cloudera-manager.repo >> "${LOG_FILE}" 2>&1
+rpm --import http://archive.cloudera.com/cdh5/redhat/7/x86_64/cdh/RPM-GPG-KEY-cloudera >> "${LOG_FILE}" 2>&1
+wget http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/cloudera-manager.repo -O /etc/yum.repos.d/cloudera-manager.repo >> "${LOG_FILE}" 2>&1
 # this often fails so adding retry logic
 n=0
 until [ $n -ge 5 ]
@@ -109,7 +109,8 @@ log "END: master node deployments"
 
 
 # Set up python
-rpm -ivh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm >> "${LOG_FILE}" 2>&1
+#rpm -ivh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm >> "${LOG_FILE}" 2>&1
+rpm -ivh http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm  >> "${LOG_FILE}" 2>&1
 yum -y install python-pip >> "${LOG_FILE}" 2>&1
 pip install cm_api >> "${LOG_FILE}" 2>&1
 
