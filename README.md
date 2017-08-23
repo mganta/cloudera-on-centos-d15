@@ -9,17 +9,7 @@ Once the trial has concluded, the Cloudera Enterprise features will be disabled 
     <img src="http://azuredeploy.net/AzureGov.png" />
 </a>
 
-# DS13 Deployment(smaller size machine for batch and poc)
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fcloudera-on-centos%2Fazuredeployds13.json" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png" />
-</a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fcloudera-on-centos%2Fazuredeployds13.json" target="_blank">
-    <img src="http://azuredeploy.net/AzureGov.png" />
-</a>
 
-# Deploy to Azure Germany (Select VM Instance Size with vmSize Parameter)
-<a href="https://portal.microsoftazure.de/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fcloudera-on-centos%2FazuredeployGermany.json" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png" />
-</a>
 
 Version 2016-05-26
 
